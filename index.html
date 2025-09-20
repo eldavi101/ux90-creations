@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX90 Creations - Professional Digital Agency | Web Development & Design</title>
+    <meta name="description" content="UX90 Creations - Leading digital agency specializing in web development, mobile apps, desktop applications, SEO services, and UX/UI design. Transform your digital presence with our expert team.">
+    <meta name="keywords" content="web development, mobile apps, desktop applications, SEO, UX design, digital agency, software development, diseño web, aplicaciones móviles">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ux90creations.com/">
+    <meta property="og:title" content="UX90 Creations - Professional Digital Agency">
+    <meta property="og:description" content="Transform your digital presence with our expert web development, mobile apps, and SEO services.">
+    <meta property="og:image" content="https://ux90creations.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ux90creations.com/">
+    <meta property="twitter:title" content="UX90 Creations - Professional Digital Agency">
+    <meta property="twitter:description" content="Transform your digital presence with our expert web development, mobile apps, and SEO services.">
+    <meta property="twitter:image" content="https://ux90creations.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-lang="en">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2 class="brand-name" data-en="UX90 Creations" data-es="UX90 Creaciones">UX90 Creations</h2>
+                <span class="brand-tagline" data-en="Digital Agency" data-es="Agencia Digital">Digital Agency</span>
+            </div>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
+                <a href="#services" class="nav-link" data-en="Services" data-es="Servicios">Services</a>
+                <a href="#about" class="nav-link" data-en="About" data-es="Nosotros">About</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+                <a href="#whatsapp-btn" class="cta-nav" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-en="Professional Digital Agency" data-es="Agencia Digital Profesional">Professional Digital Agency</span>
+                </h1>
+                <p class="hero-subtitle" data-en="We create stunning websites, mobile apps, and provide comprehensive digital marketing services to help your business grow online." data-es="Creamos sitios web impresionantes, aplicaciones móviles y brindamos servicios integrales de marketing digital para ayudar a crecer tu negocio en línea.">
+                    We create stunning websites, mobile apps, and provide comprehensive digital marketing services to help your business grow online.
+                </p>
+                <div class="hero-cta">
+                    <a href="#whatsapp-btn" class="btn-primary" data-en="Start Your Project" data-es="Iniciar Proyecto">Start Your Project</a>
+                    <a href="#services" class="btn-secondary" data-en="Our Services" data-es="Nuestros Servicios">Our Services</a>
+                </div>
+                
+                <!-- Guarantees -->
+                <div class="guarantees">
+                    <div class="guarantee-item">
+                        <i class="fas fa-clock"></i>
+                        <span data-en="100% On-Time Delivery" data-es="100% Entrega a Tiempo">100% On-Time Delivery</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span data-en="Satisfaction Guaranteed" data-es="Satisfacción Garantizada">Satisfaction Guaranteed</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-headset"></i>
+                        <span data-en="24/7 Support" data-es="Soporte 24/7">24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="floating-cards">
+                    <div class="floating-card card-1">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Our Professional Services" data-es="Nuestros Servicios Profesionales">Our Professional Services</h2>
+                <p data-en="Comprehensive digital solutions to transform your business presence online" data-es="Soluciones digitales integrales para transformar la presencia de tu negocio en línea">
+                    Comprehensive digital solutions to transform your business presence online
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Web Development -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-en="Web Development" data-es="Desarrollo Web">Web Development</h3>
+                        <p data-en="Professional team highly qualified in jQuery, JavaScript, Responsive Web Design, HTML, WordPress, Linux, Ajax, CSS, Apache and MySQL." data-es="Equipo profesional altamente calificado en jQuery, JavaScript, Diseño Web Responsivo, HTML, WordPress, Linux, Ajax, CSS, Apache y MySQL.">
+                            Professional team highly qualified in jQuery, JavaScript, Responsive Web Design, HTML, WordPress, Linux, Ajax, CSS, Apache and MySQL.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Custom Website Development" data-es="Desarrollo Web Personalizado">Custom Website Development</li>
+                            <li data-en="E-commerce Solutions" data-es="Soluciones E-commerce">E-commerce Solutions</li>
+                            <li data-en="CMS Integration" data-es="Integración CMS">CMS Integration</li>
+                            <li data-en="Responsive Design" data-es="Diseño Responsivo">Responsive Design</li>
+                        </ul>
+                        <a href="#contact" class="service-btn" data-en="Learn More" data-es="Saber Más">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Applications -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-en="Desktop Applications" data-es="Aplicaciones de Escritorio">Desktop Applications</h3>
+                        <p data-en="Custom desktop software solutions for Windows, macOS, and Linux. We create powerful applications using modern frameworks like Electron, .NET, Java, and native development tools." data-es="Soluciones de software de escritorio personalizadas para Windows, macOS y Linux. Creamos aplicaciones potentes utilizando frameworks modernos como Electron, .NET, Java y herramientas de desarrollo nativo.">
+                            Custom desktop software solutions for Windows, macOS, and Linux. We create powerful applications using modern frameworks like Electron, .NET, Java, and native development tools.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Cross-Platform Development" data-es="Desarrollo Multiplataforma">Cross-Platform Development</li>
+                            <li data-en="Electron Applications" data-es="Aplicaciones Electron">Electron Applications</li>
+                            <li data-en="Native Windows Apps" data-es="Apps Nativas Windows">Native Windows Apps</li>
+                            <li data-en="System Integration" data-es="Integración de Sistema">System Integration</li>
+                        </ul>
+                        <a href="#contact" class="service-btn" data-en="Learn More" data-es="Saber Más">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- UX/UI Design -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-en="UX/UI Design" data-es="Diseño UX/UI">UX/UI Design</h3>
+                        <p data-en="User-centered design solutions that create exceptional digital experiences. We focus on usability, accessibility, and beautiful interfaces that engage users and drive conversions." data-es="Soluciones de diseño centradas en el usuario que crean experiencias digitales excepcionales. Nos enfocamos en usabilidad, accesibilidad e interfaces hermosas que involucran a los usuarios y generan conversiones.">
+                            User-centered design solutions that create exceptional digital experiences. We focus on usability, accessibility, and beautiful interfaces that engage users and drive conversions.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="User Research & Testing" data-es="Investigación y Pruebas de Usuario">User Research & Testing</li>
+                            <li data-en="Wireframing & Prototyping" data-es="Wireframing y Prototipos">Wireframing & Prototyping</li>
+                            <li data-en="Interface Design" data-es="Diseño de Interfaz">Interface Design</li>
+                            <li data-en="Design Systems" data-es="Sistemas de Diseño">Design Systems</li>
+                        </ul>
+                        <a href="#contact" class="service-btn" data-en="Learn More" data-es="Saber Más">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- SEO Services -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-en="SEO Agency Services" data-es="Servicios de Agencia SEO">SEO Agency Services</h3>
+                        <p data-en="Google maps optimization, Google search optimization, Google My Business (GMB) setup, optimization and publishing, Local landing pages, Backlinks, Content optimization including errors and descriptions of categories or products, Monthly reports so you know what work we did and how much you improved." data-es="Optimización de mapas de Google, Optimización de búsqueda de Google, Configuración, optimización y publicación de Google My Business (GMB), Páginas de destino locales, Vínculos de retroceso, Optimización de contenido incluyendo errores y descripciones de categorías o productos, Informes mensuales para que sepas qué trabajo hicimos y cuánto mejoraste.">
+                            Google maps optimization, Google search optimization, Google My Business (GMB) setup, optimization and publishing, Local landing pages, Backlinks, Content optimization including errors and descriptions of categories or products, Monthly reports so you know what work we did and how much you improved.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Local SEO" data-es="SEO Local">Local SEO</li>
+                            <li data-en="Technical SEO" data-es="SEO Técnico">Technical SEO</li>
+                            <li data-en="Content Optimization" data-es="Optimización de Contenido">Content Optimization</li>
+                            <li data-en="Monthly Reports" data-es="Reportes Mensuales">Monthly Reports</li>
+                        </ul>
+                        <a href="#contact" class="service-btn" data-en="Learn More" data-es="Saber Más">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Applications -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-en="Mobile Applications" data-es="Aplicaciones Móviles">Mobile Applications</h3>
+                        <p data-en="Native and cross-platform mobile applications for iOS and Android. React Native, Flutter, and native development solutions." data-es="Aplicaciones móviles nativas y multiplataforma para iOS y Android. Soluciones de desarrollo en React Native, Flutter y nativo.">
+                            Native and cross-platform mobile applications for iOS and Android. React Native, Flutter, and native development solutions.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="iOS Development" data-es="Desarrollo iOS">iOS Development</li>
+                            <li data-en="Android Development" data-es="Desarrollo Android">Android Development</li>
+                            <li data-en="React Native" data-es="React Native">React Native</li>
+                            <li data-en="Flutter Development" data-es="Desarrollo Flutter">Flutter Development</li>
+                        </ul>
+                        <a href="#contact" class="service-btn" data-en="Learn More" data-es="Saber Más">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- E-commerce Solutions -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-en="Online Stores" data-es="Tiendas Online">Online Stores</h3>
+                        <p data-en="You can sell products, services and experiences online. Today's world is the perfect place for anyone who wants to sell online to do so clearly, precisely and accurately. We create an online store ready to sell any good or service." data-es="Usted puede vender online productos, servicios y experiencias. El mundo de HOY es el lugar perfecto para que cualquier persona que quiere vender online lo pueda hacer de forma clara, precisa y exacta. Nosotros creamos una Tienda Online lista para vender cualquier bien o servicio.">
+                            You can sell products, services and experiences online. Today's world is the perfect place for anyone who wants to sell online to do so clearly, precisely and accurately. We create an online store ready to sell any good or service.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Shopify Development" data-es="Desarrollo Shopify">Shopify Development</li>
+                            <li data-en="WooCommerce" data-es="WooCommerce">WooCommerce</li>
+                            <li data-en="Payment Integration" data-es="Integración de Pagos">Payment Integration</li>
+                            <li data-en="Inventory Management" data-es="Gestión de Inventario">Inventory Management</li>
+                        </ul>
+                        <a href="#contact" class="service-btn" data-en="Learn More" data-es="Saber Más">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Why Choose UX90 Creations?" data-es="¿Por Qué Elegir UX90 Creations?">Why Choose UX90 Creations?</h2>
+                <p data-en="100% guarantee on time, service and delivery. We are interested in working with you once and many more times. That's why at UX90 Creations we are committed to providing all possible advice on your project or business idea." data-es="Garantía 100% en tiempo, servicio y entrega. Nos interesa trabajar con usted una y muchas veces más. Por eso en UX90 Creations estamos comprometidos a brindar toda la asesoría posible en su proyecto o idea de negocio.">
+                    100% guarantee on time, service and delivery. We are interested in working with you once and many more times. That's why at UX90 Creations we are committed to providing all possible advice on your project or business idea.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 data-en="Proven Experience" data-es="Experiencia Validada">Proven Experience</h3>
+                    <p data-en="You will get huge advantages from years of work and projects that empower us to help clients worldwide. Simply, we are a web design agency focused on expansive digital marketing." data-es="Obtendrás enormes ventajas de años de trabajo y proyectos que nos empoderan a ayudar a clientes de todo el mundo. Simple, Somos una agencia de diseño web enfocados en marketing digital expansivo.">
+                        You will get huge advantages from years of work and projects that empower us to help clients worldwide. Simply, we are a web design agency focused on expansive digital marketing.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-en="Optimal Solutions for Every Business" data-es="Soluciones Óptimas para Cada Negocio">Optimal Solutions for Every Business</h3>
+                    <p data-en="We believe in delivering optimal solutions for our clients, we seek to satisfy their particular needs. We are here to maximize your potential and help you get huge profits." data-es="Creemos en la entrega de soluciones óptimas para nuestros clientes, buscamos satisfacer sus necesidades particulares. Estamos aquí para maximizar su potencial y ayudarlos a obtener enormes ganancias.">
+                        We believe in delivering optimal solutions for our clients, we seek to satisfy their particular needs. We are here to maximize your potential and help you get huge profits.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-en="Innovative Thinking" data-es="Pensar de Manera Innovadora">Innovative Thinking</h3>
+                    <p data-en="After years in the market, we have learned the right way that one can think innovatively. We have extensive experience in programming, web design and digital marketing. More than a decade that helps us provide the right solutions for clients." data-es="Luego de años en el mercado, hemos aprendido la forma correcta en que uno puede pensar de manera innovadora. Tenemos una amplia experiencia en programación, diseño web y marketing digital. Más de una década que nos ayuda a proporcionar las soluciones justas para clientes.">
+                        After years in the market, we have learned the right way that one can think innovatively. We have extensive experience in programming, web design and digital marketing. More than a decade that helps us provide the right solutions for clients.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 data-en="Appropriate Tools" data-es="Herramientas Apropiadas">Appropriate Tools</h3>
+                    <p data-en="We have an extensive toolbox that is constantly growing. However, these tools can only be used to their full potential if you know which one to use in the right place." data-es="Tenemos una extensa caja de herramientas que crece constantemente. Sin embargo, estas herramientas solo se pueden utilizar con todo su potencial si se sabe cuál usar en el lugar correcto.">
+                        We have an extensive toolbox that is constantly growing. However, these tools can only be used to their full potential if you know which one to use in the right place.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="If you have any inquiry, we are always available" data-es="Si tiene alguna consulta, siempre estamos disponibles">If you have any inquiry, we are always available</h2>
+                <p data-en="Our team is always in standby/active mode to help you handle all your business requirements." data-es="Nuestro equipo siempre está en modo de espera/activo para ayudarlo a manejar todos los requisitos de su negocio.">
+                    Our team is always in standby/active mode to help you handle all your business requirements.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-en="Our Location" data-es="Nuestra Ubicación">Our Location</h3>
+                            <p>
+                                <span data-en="Miami, FL" data-es="Miami, FL">Miami, FL</span><br>
+                                <span data-en="United States" data-es="Estados Unidos">United States</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-en="Phone" data-es="Teléfono">Phone</h3>
+                            <p>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-en="Email" data-es="Correo">Email</h3>
+                            <p>
+                                <a href="mailto:hello@ux90creations.com">hello@ux90creations.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 data-en="Send us a message" data-es="Envíanos un mensaje">Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-en="Your Name" data-es="Tu Nombre">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-en="Your Email" data-es="Tu Email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone" data-en="Phone Number" data-es="Número de Teléfono">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" data-en="Select a service" data-es="Selecciona un servicio">Select a service</option>
+                                <option value="web-development" data-en="Web Development" data-es="Desarrollo Web">Web Development</option>
+                                <option value="desktop-apps" data-en="Desktop Applications" data-es="Aplicaciones de Escritorio">Desktop Applications</option>
+                                <option value="mobile-apps" data-en="Mobile Applications" data-es="Aplicaciones Móviles">Mobile Applications</option>
+                                <option value="ux-ui-design" data-en="UX/UI Design" data-es="Diseño UX/UI">UX/UI Design</option>
+                                <option value="seo" data-en="SEO Services" data-es="Servicios SEO">SEO Services</option>
+                                <option value="ecommerce" data-en="E-commerce" data-es="E-commerce">E-commerce</option>
+                                <option value="other" data-en="Other" data-es="Otro">Other</option>
+                            </select>
+                            <label for="service" data-en="Service Needed" data-es="Servicio Requerido">Service Needed</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message" data-en="Your Message" data-es="Tu Mensaje">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn-primary" data-en="Send Message" data-es="Enviar Mensaje">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- WhatsApp CTA -->
+            <div id="whatsapp-btn" class="whatsapp-section">
+                <div class="whatsapp-cta">
+                    <h3 data-en="Ready to start your project?" data-es="¿Listo para iniciar tu proyecto?">Ready to start your project?</h3>
+                    <p data-en="Chat with us on WhatsApp for immediate assistance" data-es="Chatea con nosotros en WhatsApp para asistencia inmediata">Chat with us on WhatsApp for immediate assistance</p>
+                    <a href="https://wa.me/15551234567?text=Hello%20I%20want%20info%20about%20UX90%20Creations%20services" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UX90 Creations</h3>
+                    <p data-en="We are a team of web designers committed to our clients. UX90 Creations is the leading customer service agency since 2020. We create beautiful and functional websites, landing pages, marketplaces and custom solutions for our users." data-es="Somos un equipo de diseñadores web comprometidos con nuestros clientes. UX90 Creations es la agencia líder en servicio al cliente desde 2020. Creamos bellos y funcionales sitios web, landing pages, marketplaces y soluciones a la medida de nuestros usuarios.">
+                        We are a team of web designers committed to our clients. UX90 Creations is the leading customer service agency since 2020. We create beautiful and functional websites, landing pages, marketplaces and custom solutions for our users.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Services" data-es="Servicios">Services</h4>
+                    <ul>
+                        <li><a href="#services" data-en="Web Development" data-es="Desarrollo Web">Web Development</a></li>
+                        <li><a href="#services" data-en="Desktop Apps" data-es="Apps de Escritorio">Desktop Apps</a></li>
+                        <li><a href="#services" data-en="Mobile Apps" data-es="Apps Móviles">Mobile Apps</a></li>
+                        <li><a href="#services" data-en="UX/UI Design" data-es="Diseño UX/UI">UX/UI Design</a></li>
+                        <li><a href="#services" data-en="SEO Services" data-es="Servicios SEO">SEO Services</a></li>
+                        <li><a href="#services" data-en="E-commerce" data-es="E-commerce">E-commerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-phone"></i> <a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:hello@ux90creations.com">hello@ux90creations.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Miami, FL, United States" data-es="Miami, FL, Estados Unidos">Miami, FL, United States</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-es="Síguenos">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 UX90 Creations. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+                <p data-en="WE ARE ONE OF THE #1 WEB AGENCIES ON GOOGLE WITH GLOBAL SERVICE AND CUSTOMER SATISFACTION" data-es="SOMOS UNA DE LAS AGENCIAS WEB #1 EN GOOGLE CON SERVICIO GLOBAL Y SATISFACCIÓN AL CLIENTE">
+                    WE ARE ONE OF THE #1 WEB AGENCIES ON GOOGLE WITH GLOBAL SERVICE AND CUSTOMER SATISFACTION
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/15551234567?text=Hello%20I%20want%20info%20about%20UX90%20Creations%20services" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
