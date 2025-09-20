@@ -397,12 +397,34 @@ function handleFormSubmit(e) {
     submitBtn.textContent = currentLanguage === 'en' ? 'Sending...' : 'Enviando...';
     submitBtn.disabled = true;
     
-    // Simulate form submission (replace with actual form handling)
+    // Create Gmail mailto link with form data
+    const subject = encodeURIComponent(`Nuevo mensaje desde UX90 Creations - ${data.service}`);
+    const body = encodeURIComponent(`
+Nombre: ${data.name}
+Email: ${data.email}
+Teléfono: ${data.phone || 'No proporcionado'}
+Servicio: ${data.service}
+
+Mensaje:
+${data.message}
+
+---
+Enviado desde: ${window.location.href}
+`);
+    
+    const mailtoLink = `mailto:machindavid2@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open Gmail
+    window.location.href = mailtoLink;
+    
+    // Show success message
+    showNotification(
+        currentLanguage === 'en' ? 'Opening Gmail to send your message...' : 'Abriendo Gmail para enviar tu mensaje...',
+        'success'
+    );
+    
+    // Reset form
     setTimeout(() => {
-        showNotification(
-            currentLanguage === 'en' ? 'Message sent successfully!' : '¡Mensaje enviado exitosamente!',
-            'success'
-        );
         contactForm.reset();
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
@@ -410,7 +432,7 @@ function handleFormSubmit(e) {
         // Remove focused class from form groups
         const formGroups = document.querySelectorAll('.form-group');
         formGroups.forEach(group => group.classList.remove('focused'));
-    }, 1500);
+    }, 1000);
 }
 
 function validateForm(data) {
