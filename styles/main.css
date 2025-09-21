@@ -169,6 +169,18 @@ a {
 
 .nav-brand {
     display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
     flex-direction: column;
 }
 
@@ -845,6 +857,19 @@ a {
 .footer-section h3 {
     color: var(--text-white);
     margin-bottom: 1rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
 }
 
 .footer-section h4 {
