@@ -174,9 +174,14 @@ a {
 }
 
 .brand-logo {
-    height: 40px;
-    width: auto;
+    height: 60px;
+    width: 60px;
     object-fit: contain;
+    background: transparent;
+    border-radius: 50%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    /* Eliminar cualquier fondo blanco */
+    mix-blend-mode: multiply;
 }
 
 .brand-text {
@@ -867,9 +872,14 @@ a {
 }
 
 .footer-logo {
-    height: 32px;
-    width: auto;
+    height: 48px;
+    width: 48px;
     object-fit: contain;
+    background: transparent;
+    border-radius: 50%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    /* Eliminar cualquier fondo blanco en footer */
+    mix-blend-mode: screen;
 }
 
 .footer-section h4 {
