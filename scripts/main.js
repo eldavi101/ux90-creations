@@ -397,7 +397,56 @@ function handleFormSubmit(e) {
     submitBtn.textContent = currentLanguage === 'en' ? 'Sending...' : 'Enviando...';
     submitBtn.disabled = true;
     
-    // Create Gmail mailto link with form data
+    // Try EmailJS if configured
+    const cfg = window.__EMAILJS__ || {};
+    const tpl = window.__EMAILJS_TEMPLATE_MAP__ || {};
+    const emailjsAvailable = typeof emailjs !== 'undefined' && cfg.publicKey && cfg.serviceId && cfg.templateId;
+
+    const finalize = (ok = true, msgEn = 'Message sent successfully.', msgEs = 'Mensaje enviado correctamente.') => {
+        showNotification(currentLanguage === 'en' ? msgEn : msgEs, ok ? 'success' : 'error');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        if (ok) {
+            contactForm.reset();
+            const formGroups = document.querySelectorAll('.form-group');
+            formGroups.forEach(group => group.classList.remove('focused'));
+        }
+    };
+
+    const payload = {
+        [tpl.from_name || 'from_name']: data.name,
+        [tpl.from_email || 'from_email']: data.email,
+        [tpl.phone || 'phone']: data.phone || 'N/A',
+        [tpl.service || 'service']: data.service,
+        [tpl.message || 'message']: data.message,
+        [tpl.page_url || 'page_url']: window.location.href
+    };
+
+    if (emailjsAvailable) {
+        try {
+            emailjs.init(cfg.publicKey);
+            emailjs.send(cfg.serviceId, cfg.templateId, payload)
+                .then(() => finalize(true))
+                .catch((err) => {
+                    console.error('EmailJS error:', err);
+                    // Fallback to mailto if EmailJS fails
+                    fallbackMailto(data);
+                    finalize(true, 'Opening email client to send your message...', 'Abriendo el cliente de correo para enviar tu mensaje...');
+                });
+        } catch (err) {
+            console.error('EmailJS init error:', err);
+            fallbackMailto(data);
+            finalize(true, 'Opening email client to send your message...', 'Abriendo el cliente de correo para enviar tu mensaje...');
+        }
+    } else {
+        // Fallback to mailto when EmailJS not configured
+        fallbackMailto(data);
+        finalize(true, 'Opening email client to send your message...', 'Abriendo el cliente de correo para enviar tu mensaje...');
+    }
+}
+
+// Fallback mailto helper
+function fallbackMailto(data) {
     const subject = encodeURIComponent(`Nuevo mensaje desde UX90 Creations - ${data.service}`);
     const body = encodeURIComponent(`
 Nombre: ${data.name}
@@ -411,28 +460,8 @@ ${data.message}
 ---
 Enviado desde: ${window.location.href}
 `);
-    
     const mailtoLink = `mailto:machindavid2@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Open Gmail
     window.location.href = mailtoLink;
-    
-    // Show success message
-    showNotification(
-        currentLanguage === 'en' ? 'Opening Gmail to send your message...' : 'Abriendo Gmail para enviar tu mensaje...',
-        'success'
-    );
-    
-    // Reset form
-    setTimeout(() => {
-        contactForm.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        
-        // Remove focused class from form groups
-        const formGroups = document.querySelectorAll('.form-group');
-        formGroups.forEach(group => group.classList.remove('focused'));
-    }, 1000);
 }
 
 function validateForm(data) {
