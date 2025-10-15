@@ -88,6 +88,17 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ux90.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://ux90.dev/#services"},
+      {"@type": "ListItem", "position": 3, "name": "Mobile Apps Miami", "item": "https://ux90.dev/services/mobile-apps-miami.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav class="navbar">
@@ -109,6 +120,13 @@
   </nav>
 
   <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-top:96px;">
+      <ol>
+        <li><a href="../">Home</a></li>
+        <li><a href="../#services">Services</a></li>
+        <li aria-current="page">Mobile Apps Miami</li>
+      </ol>
+    </nav>
     <section class="hero" style="padding-top: 96px;">
       <h1>Mobile App Development Miami</h1>
       <p>Native and cross‑platform apps with great UX, integrations, and analytics for Miami and Hialeah businesses.</p>
