@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,75 +25,37 @@
   <link rel="apple-touch-icon" href="../images/logo.png">
   <link rel="stylesheet" href="../styles/main.css">
 
+  <!-- Service JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Web Design Miami",
     "areaServed": ["Miami", "Hialeah", "Miami-Dade"],
-    "provider": {
-      "@type": "Organization",
-      "name": "UX90 Creations",
-      "url": "https://ux90.dev"
-    },
+    "provider": {"@type": "Organization", "name": "UX90 Creations", "url": "https://ux90.dev"},
     "serviceType": "Web Design & Development",
     "description": "Custom, responsive and SEO‑optimized websites for businesses in Miami and Hialeah.",
     "url": "https://ux90.dev/services/web-design-miami.html",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "3"
-    },
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "2"},
     "review": [
-      {
-        "@type": "Review",
-        "author": {"@type": "Person", "name": "Patricia G."},
-        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-        "reviewBody": "Nos ayudaron a definir estructura y contenidos. El sitio carga rápido y mejoró nuestro posicionamiento local.",
-        "name": "Carga rápida y mejor SEO"
-      },
-      {
-        "@type": "Review",
-        "author": {"@type": "Person", "name": "Michael S."},
-        "reviewRating": {"@type": "Rating", "ratingValue": "4.8"},
-        "reviewBody": "Proceso muy claro, entregas puntuales y diseño moderno. Volveríamos a trabajar con ellos.",
-        "name": "Diseño moderno y puntuales"
-      }
+      {"@type": "Review", "author": {"@type": "Person", "name": "Patricia G."}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "Nos ayudaron a definir estructura y contenidos. El sitio carga rápido y mejoró nuestro posicionamiento local.", "name": "Carga rápida y mejor SEO"},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Michael S."}, "reviewRating": {"@type": "Rating", "ratingValue": "4.8"}, "reviewBody": "Proceso muy claro, entregas puntuales y diseño moderno. Volveríamos a trabajar con ellos.", "name": "Diseño moderno y puntuales"}
     ]
   }
   </script>
+  <!-- FAQ JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does a website cost in Miami?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most small business websites range from $1,500 to $6,000 depending on scope, pages, and custom features. Get a tailored quote after a quick call."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Typical timelines are 2–6 weeks depending on content readiness and complexity. Rush options available."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you include SEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We build with SEO best practices: fast loading, mobile‑first, structured data, and on‑page optimization."
-        }
-      }
+      {"@type": "Question", "name": "How much does a website cost in Miami?", "acceptedAnswer": {"@type": "Answer", "text": "Most small business websites range from $1,500 to $6,000 depending on scope, pages, and custom features. Get a tailored quote after a quick call."}},
+      {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "Typical timelines are 2–6 weeks depending on content readiness and complexity. Rush options available."}},
+      {"@type": "Question", "name": "Do you include SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build with SEO best practices: fast loading, mobile‑first, structured data, and on‑page optimization."}}
     ]
   }
   </script>
+  <!-- Breadcrumbs JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,15 +74,19 @@
       <div class="nav-brand">
         <a href="../"><img src="../images/logo.png" alt="UX90 Creations Logo" class="brand-logo"></a>
         <div class="brand-text">
-          <h2 class="brand-name">UX90 Creations</h2>
-          <span class="brand-tagline">Digital Agency</span>
+          <h2 class="brand-name" data-en="UX90 Creations" data-es="UX90 Creaciones">UX90 Creations</h2>
+          <span class="brand-tagline" data-en="Digital Agency" data-es="Agencia Digital">Digital Agency</span>
         </div>
       </div>
+      <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+      </div>
       <div class="nav-menu">
-        <a class="nav-link" href="../#services">Services</a>
-        <a class="nav-link" href="../#about">About</a>
-        <a class="nav-link" href="../#contact">Contact</a>
-        <a class="cta-nav" href="../#whatsapp-btn">Get Quote</a>
+        <a class="nav-link" href="../#services" data-en="Services" data-es="Servicios">Services</a>
+        <a class="nav-link" href="../#about" data-en="About" data-es="Nosotros">About</a>
+        <a class="nav-link" href="../#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        <a class="cta-nav" href="../#whatsapp-btn" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
       </div>
     </div>
   </nav>
@@ -126,60 +94,61 @@
   <main class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-top:96px;">
       <ol>
-        <li><a href="../">Home</a></li>
-        <li><a href="../#services">Services</a></li>
-        <li aria-current="page">Web Design Miami</li>
+        <li><a href="../" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="../#services" data-en="Services" data-es="Servicios">Services</a></li>
+        <li aria-current="page" data-en="Web Design Miami" data-es="Diseño Web Miami">Web Design Miami</li>
       </ol>
     </nav>
+
     <section class="hero" style="padding-top: 96px;">
-      <h1>Web Design Miami</h1>
-      <p>Custom websites built to convert. Fast, mobile‑first, and SEO‑ready for Miami and Hialeah businesses.</p>
+      <h1 data-en="Web Design Miami" data-es="Diseño Web Miami">Web Design Miami</h1>
+      <p data-en="Custom websites built to convert. Fast, mobile‑first, and SEO‑ready for Miami and Hialeah businesses." data-es="Sitios web a medida diseñados para convertir. Rápidos, mobile‑first y listos para SEO para negocios en Miami y Hialeah.">Custom websites built to convert. Fast, mobile‑first, and SEO‑ready for Miami and Hialeah businesses.</p>
       <div class="hero-cta">
-        <a href="https://wa.me/17869926153?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20dise%C3%B1o%20web" class="btn-primary" target="_blank">Chat on WhatsApp</a>
-        <a href="../#contact" class="btn-secondary">Request a Quote</a>
+        <a href="https://wa.me/17869926153?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20dise%C3%B1o%20web" class="btn-primary" target="_blank" data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</a>
+        <a href="../#contact" class="btn-secondary" data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</a>
       </div>
     </section>
 
     <section class="services" id="overview">
       <div class="section-header">
-        <h2>What you get</h2>
-        <p>Everything you need for a high‑performing site.</p>
+        <h2 data-en="What you get" data-es="Qué obtienes">What you get</h2>
+        <p data-en="Everything you need for a high‑performing site." data-es="Todo lo necesario para un sitio de alto rendimiento.">Everything you need for a high‑performing site.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card"><div class="service-image"><i class="fas fa-gauge-high"></i></div><div class="service-content"><h3>Performance & Core Web Vitals</h3><p>Optimized assets, caching, lazy‑loading, and Lighthouse‑friendly builds.</p></div></div>
-        <div class="service-card"><div class="service-image"><i class="fas fa-mobile-alt"></i></div><div class="service-content"><h3>Responsive & Accessible</h3><p>Mobile‑first layouts, WCAG 2.1‑aware components, and semantic HTML.</p></div></div>
-        <div class="service-card"><div class="service-image"><i class="fas fa-magnifying-glass"></i></div><div class="service-content"><h3>SEO‑Ready</h3><p>Structured data, meta tags, internal linking, and content guidance.</p></div></div>
+        <div class="service-card"><div class="service-image"><i class="fas fa-gauge-high"></i></div><div class="service-content"><h3 data-en="Performance & Core Web Vitals" data-es="Performance y Core Web Vitals">Performance & Core Web Vitals</h3><p data-en="Optimized assets, caching, lazy‑loading, and Lighthouse‑friendly builds." data-es="Assets optimizados, caché, lazy‑loading y builds compatibles con Lighthouse.">Optimized assets, caching, lazy‑loading, and Lighthouse‑friendly builds.</p></div></div>
+        <div class="service-card"><div class="service-image"><i class="fas fa-mobile-alt"></i></div><div class="service-content"><h3 data-en="Responsive & Accessible" data-es="Responsive y Accesible">Responsive & Accessible</h3><p data-en="Mobile‑first layouts, WCAG 2.1‑aware components, and semantic HTML." data-es="Layouts mobile‑first, componentes con WCAG 2.1 y HTML semántico.">Mobile‑first layouts, WCAG 2.1‑aware components, and semantic HTML.</p></div></div>
+        <div class="service-card"><div class="service-image"><i class="fas fa-magnifying-glass"></i></div><div class="service-content"><h3 data-en="SEO‑Ready" data-es="Listo para SEO">SEO‑Ready</h3><p data-en="Structured data, meta tags, internal linking, and content guidance." data-es="Datos estructurados, meta tags, linking interno y guía de contenidos.">Structured data, meta tags, internal linking, and content guidance.</p></div></div>
       </div>
     </section>
 
     <section class="about-section" id="process">
       <div class="section-header">
-        <h2>Our process</h2>
-        <p>Transparent steps from idea to launch.</p>
+        <h2 data-en="Our process" data-es="Nuestro proceso">Our process</h2>
+        <p data-en="Transparent steps from idea to launch." data-es="Pasos transparentes desde la idea hasta el lanzamiento.">Transparent steps from idea to launch.</p>
       </div>
       <ol class="about-features">
-        <li>Discovery & scope</li>
-        <li>Wireframes & UI design</li>
-        <li>Development & QA</li>
-        <li>SEO setup & launch</li>
-        <li>Support & improvements</li>
+        <li data-en="Discovery & scope" data-es="Descubrimiento y alcance">Discovery & scope</li>
+        <li data-en="Wireframes & UI design" data-es="Wireframes y diseño UI">Wireframes & UI design</li>
+        <li data-en="Development & QA" data-es="Desarrollo y QA">Development & QA</li>
+        <li data-en="SEO setup & launch" data-es="Configuración SEO y lanzamiento">SEO setup & launch</li>
+        <li data-en="Support & improvements" data-es="Soporte y mejoras">Support & improvements</li>
       </ol>
     </section>
 
     <section class="contact" id="faq">
       <div class="section-header">
-        <h2>FAQ</h2>
-        <p>Common questions from Miami businesses.</p>
+        <h2 data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</h2>
+        <p data-en="Common questions from Miami businesses." data-es="Preguntas comunes de negocios en Miami.">Common questions from Miami businesses.</p>
       </div>
-      <details><summary>How much does a website cost?</summary><p>Most projects range from $1.5k–$6k. We’ll confirm after a short call.</p></details>
-      <details><summary>Do you migrate old content?</summary><p>Yes, we migrate and clean up your content and redirects.</p></details>
-      <details><summary>Do you provide hosting?</summary><p>We recommend and set up optimal hosting or use GitHub Pages when suitable.</p></details>
+      <details><summary data-en="How much does a website cost?" data-es="¿Cuánto cuesta un sitio web?">How much does a website cost?</summary><p data-en="Most projects range from $1.5k–$6k. We’ll confirm after a short call." data-es="La mayoría de los proyectos varía entre $1.5k–$6k. Confirmamos tras una breve llamada.">Most projects range from $1.5k–$6k. We’ll confirm after a short call.</p></details>
+      <details><summary data-en="Do you migrate old content?" data-es="¿Migran contenido antiguo?">Do you migrate old content?</summary><p data-en="Yes, we migrate and clean up your content and redirects." data-es="Sí, migramos y limpiamos tu contenido y redirecciones.">Yes, we migrate and clean up your content and redirects.</p></details>
+      <details><summary data-en="Do you provide hosting?" data-es="¿Proveen hosting?">Do you provide hosting?</summary><p data-en="We recommend and set up optimal hosting or use GitHub Pages when suitable." data-es="Recomendamos y configuramos el hosting óptimo o GitHub Pages cuando aplica.">We recommend and set up optimal hosting or use GitHub Pages when suitable.</p></details>
     </section>
 
     <section class="clients">
       <div class="section-header">
-        <h2>Clients</h2>
-        <p>Selected brands we’ve supported.</p>
+        <h2 data-en="Clients" data-es="Clientes">Clients</h2>
+        <p data-en="Selected brands we’ve supported." data-es="Marcas seleccionadas que hemos apoyado.">Selected brands we’ve supported.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item" aria-label="Client 1"><img src="../images/clients/client-1.svg" alt="Client 1 logo" loading="lazy" /></div>
@@ -192,51 +161,51 @@
     </section>
     <section class="testimonials">
       <div class="section-header">
-        <h2>Testimonials</h2>
-        <p>Web design feedback from Miami/Hialeah clients.</p>
+        <h2 data-en="Testimonials" data-es="Testimonios">Testimonials</h2>
+        <p data-en="Web design feedback from Miami/Hialeah clients." data-es="Opiniones de clientes de Miami/Hialeah sobre diseño web.">Web design feedback from Miami/Hialeah clients.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-star"></i></div>
-          <h3>“Fast launch, clean design”</h3>
-          <p>“From wireframes to launch in under a month. The site feels faster and we get more inquiries.” — <strong>Patricia G.</strong></p>
+          <h3 data-en="Fast launch, clean design" data-es="Lanzamiento rápido, diseño limpio">“Fast launch, clean design”</h3>
+          <p data-en="From wireframes to launch in under a month. The site feels faster and we get more inquiries." data-es="De wireframes al lanzamiento en menos de un mes. El sitio se siente más rápido y recibimos más consultas.">“From wireframes to launch in under a month. The site feels faster and we get more inquiries.” — <strong>Patricia G.</strong></p>
         </div>
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-star"></i></div>
-          <h3>“Mejor experiencia móvil”</h3>
-          <p>“Nuestro tráfico móvil convirtió mejor tras el rediseño. Integraron WhatsApp y formularios.” — <strong>Michael S.</strong></p>
+          <h3 data-en="Better mobile experience" data-es="Mejor experiencia móvil">“Better mobile experience”</h3>
+          <p data-en="Our mobile traffic converted better after the redesign. WhatsApp and forms integrated smoothly." data-es="Nuestro tráfico móvil convirtió mejor tras el rediseño. WhatsApp y formularios integrados sin problemas.">“Nuestro tráfico móvil convirtió mejor tras el rediseño. Integraron WhatsApp y formularios.” — <strong>Michael S.</strong></p>
         </div>
       </div>
     </section>
 
     <section class="services" id="related-services">
       <div class="section-header">
-        <h2>Related services</h2>
-        <p>Explore more ways we can help your business grow.</p>
+        <h2 data-en="Related services" data-es="Servicios relacionados">Related services</h2>
+        <p data-en="Explore more ways we can help your business grow." data-es="Explora más formas en las que podemos ayudar a crecer tu negocio.">Explore more ways we can help your business grow.</p>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-image"><i class="fas fa-search"></i></div>
           <div class="service-content">
-            <h3>SEO Miami</h3>
-            <p>Improve rankings, local visibility, and conversions with technical and local SEO.</p>
-            <a class="service-btn" href="seo-miami.html">Learn More</a>
+            <h3 data-en="SEO Miami" data-es="SEO Miami">SEO Miami</h3>
+            <p data-en="Improve rankings, local visibility, and conversions with technical and local SEO." data-es="Mejora posiciones, visibilidad local y conversiones con SEO técnico y local.">Improve rankings, local visibility, and conversions with technical and local SEO.</p>
+            <a class="service-btn" href="seo-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-shopping-cart"></i></div>
           <div class="service-content">
-            <h3>E‑commerce Miami</h3>
-            <p>Shopify & WooCommerce stores optimized for conversions and growth.</p>
-            <a class="service-btn" href="ecommerce-miami.html">Learn More</a>
+            <h3 data-en="E‑commerce Miami" data-es="E‑commerce Miami">E‑commerce Miami</h3>
+            <p data-en="Shopify & WooCommerce stores optimized for conversions and growth." data-es="Tiendas Shopify & WooCommerce optimizadas para conversiones y crecimiento.">Shopify & WooCommerce stores optimized for conversions and growth.</p>
+            <a class="service-btn" href="ecommerce-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-palette"></i></div>
           <div class="service-content">
-            <h3>UX/UI Design</h3>
-            <p>Research, prototypes, and design systems for accessible, high‑converting interfaces.</p>
-            <a class="service-btn" href="ux-ui-design-miami.html">Learn More</a>
+            <h3 data-en="UX/UI Design" data-es="Diseño UX/UI">UX/UI Design</h3>
+            <p data-en="Research, prototypes, and design systems for accessible, high‑converting interfaces." data-es="Investigación, prototipos y sistemas de diseño para interfaces accesibles y de alta conversión.">Research, prototypes, and design systems for accessible, high‑converting interfaces.</p>
+            <a class="service-btn" href="ux-ui-design-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
       </div>
@@ -244,11 +213,11 @@
 
     <section class="contact">
       <div class="section-header">
-        <h2>Ready to start?</h2>
-        <p>Get a tailored proposal in 24–48 hours.</p>
+        <h2 data-en="Ready to start?" data-es="¿Listo para empezar?">Ready to start?</h2>
+        <p data-en="Get a tailored proposal in 24–48 hours." data-es="Recibe una propuesta a medida en 24–48 horas.">Get a tailored proposal in 24–48 hours.</p>
       </div>
       <div class="whatsapp-cta">
-        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20quote%20for%20Web%20Design%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20quote%20for%20Web%20Design%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span></a>
       </div>
     </section>
   </main>
@@ -256,7 +225,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p>&copy; 2025 UX90 Creations. All rights reserved.</p>
+        <p>&copy; 2025 UX90 Creations. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
       </div>
     </div>
   </footer>
@@ -266,3 +235,4 @@
   <script src="../scripts/main.js" defer></script>
 </body>
 </html>
+        </div>

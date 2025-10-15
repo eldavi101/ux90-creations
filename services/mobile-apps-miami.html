@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile App Development Miami | iOS & Android | UX90 Creations</title>
-  <meta name="description" content="Mobile app development in Miami and Hialeah. Native and cross‑platform apps with design, SEO integration, and app store optimization.">
+  <meta name="description" content="Mobile app development in Miami and Hialeah. Native and cross‑platform apps with design, integrations, and ASO.">
   <link rel="canonical" href="https://ux90.dev/services/mobile-apps-miami.html">
 
   <meta property="og:type" content="website">
@@ -29,30 +29,14 @@
     "@type": "Service",
     "name": "Mobile App Development Miami",
     "areaServed": ["Miami", "Hialeah", "Miami-Dade"],
-    "provider": {
-      "@type": "Organization",
-      "name": "UX90 Creations",
-      "url": "https://ux90.dev"
-    },
+    "provider": {"@type": "Organization", "name": "UX90 Creations", "url": "https://ux90.dev"},
     "serviceType": "Mobile Application Development",
     "description": "Native iOS/Android and cross‑platform apps with design and integrations for Miami businesses.",
     "url": "https://ux90.dev/services/mobile-apps-miami.html",
     "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "2"},
     "review": [
-      {
-        "@type": "Review",
-        "author": {"@type": "Person", "name": "Sofía H."},
-        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-        "reviewBody": "Publicamos en App Store y Play sin contratiempos. Buen diseño y push notifications funcionando.",
-        "name": "Lanzamiento sin contratiempos"
-      },
-      {
-        "@type": "Review",
-        "author": {"@type": "Person", "name": "Jason F."},
-        "reviewRating": {"@type": "Rating", "ratingValue": "4.8"},
-        "reviewBody": "Integraron pagos y analytics. El roadmap fue claro y cumplieron la fecha de salida.",
-        "name": "Integraciones y fecha cumplida"
-      }
+      {"@type": "Review", "author": {"@type": "Person", "name": "Sofía H."}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "Publicamos en App Store y Play sin contratiempos. Buen diseño y push notifications funcionando.", "name": "Lanzamiento sin contratiempos"},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Jason F."}, "reviewRating": {"@type": "Rating", "ratingValue": "4.8"}, "reviewBody": "Integraron pagos y analytics. El roadmap fue claro y cumplieron la fecha de salida.", "name": "Integraciones y fecha cumplida"}
     ]
   }
   </script>
@@ -61,30 +45,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you build both iOS and Android?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We build native apps and cross‑platform apps depending on needs, budget, and timeline."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you handle App Store/Play Store submission?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We prepare assets, comply with policies, and submit to both stores."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you integrate with my website or backend?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We integrate APIs, authentication, payments, and analytics for a seamless experience."
-        }
-      }
+      {"@type": "Question", "name": "Do you build both iOS and Android?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build native apps and cross‑platform apps depending on needs, budget, and timeline."}},
+      {"@type": "Question", "name": "Do you handle App Store/Play Store submission?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We prepare assets, comply with policies, and submit to both stores."}},
+      {"@type": "Question", "name": "Can you integrate with my website or backend?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We integrate APIs, authentication, payments, and analytics for a seamless experience."}}
     ]
   }
   </script>
@@ -110,11 +73,15 @@
           <span class="brand-tagline">Digital Agency</span>
         </div>
       </div>
+      <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+      </div>
       <div class="nav-menu">
-        <a class="nav-link" href="../#services">Services</a>
-        <a class="nav-link" href="../#about">About</a>
-        <a class="nav-link" href="../#contact">Contact</a>
-        <a class="cta-nav" href="../#whatsapp-btn">Get Quote</a>
+        <a class="nav-link" href="../#services" data-en="Services" data-es="Servicios">Services</a>
+        <a class="nav-link" href="../#about" data-en="About" data-es="Nosotros">About</a>
+        <a class="nav-link" href="../#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        <a class="cta-nav" href="../#whatsapp-btn" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
       </div>
     </div>
   </nav>
@@ -122,24 +89,24 @@
   <main class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-top:96px;">
       <ol>
-        <li><a href="../">Home</a></li>
-        <li><a href="../#services">Services</a></li>
-        <li aria-current="page">Mobile Apps Miami</li>
+        <li><a href="../" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="../#services" data-en="Services" data-es="Servicios">Services</a></li>
+        <li aria-current="page" data-en="Mobile Apps Miami" data-es="Apps Móviles Miami">Mobile Apps Miami</li>
       </ol>
     </nav>
     <section class="hero" style="padding-top: 96px;">
-      <h1>Mobile App Development Miami</h1>
-      <p>Native and cross‑platform apps with great UX, integrations, and analytics for Miami and Hialeah businesses.</p>
+      <h1 data-en="Mobile Apps Miami" data-es="Apps Móviles Miami">Mobile Apps Miami</h1>
+      <p data-en="iOS/Android apps with great UX, integrations, and analytics for Miami and Hialeah businesses." data-es="Apps iOS/Android con gran UX, integraciones y analíticas para negocios de Miami y Hialeah.">iOS/Android apps with great UX, integrations, and analytics for Miami and Hialeah businesses.</p>
       <div class="hero-cta">
-        <a href="https://wa.me/17869926153?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20desarrollo%20de%20apps%20m%C3%B3viles" class="btn-primary" target="_blank">Chat on WhatsApp</a>
-        <a href="../#contact" class="btn-secondary">Request a Quote</a>
+        <a href="https://wa.me/17869926153?text=Hola%20quiero%20información%20sobre%20desarrollo%20de%20apps%20móviles" class="btn-primary" target="_blank" data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</a>
+        <a href="../#contact" class="btn-secondary" data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</a>
       </div>
     </section>
 
     <section class="services" id="capabilities">
       <div class="section-header">
-        <h2>Capabilities</h2>
-        <p>Everything needed to plan, build, and ship.</p>
+        <h2 data-en="Capabilities" data-es="Capacidades">Capabilities</h2>
+        <p data-en="Everything needed to plan, build, and ship." data-es="Todo lo necesario para planificar, construir y enviar.">Everything needed to plan, build, and ship.</p>
       </div>
       <div class="services-grid">
         <div class="service-card"><div class="service-image"><i class="fas fa-mobile"></i></div><div class="service-content"><h3>Native & Cross‑Platform</h3><p>iOS, Android, React Native, Flutter, and Electron where it fits.</p></div></div>
@@ -150,18 +117,18 @@
 
     <section class="about-section" id="faq">
       <div class="section-header">
-        <h2>FAQ</h2>
-        <p>Mobile app questions, answered.</p>
+        <h2 data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</h2>
+        <p data-en="Mobile app questions, answered." data-es="Preguntas sobre aplicaciones móviles, respondidas.">Mobile app questions, answered.</p>
       </div>
-      <details><summary>How long does it take?</summary><p>Most MVPs ship in 4–10 weeks depending on scope and integrations.</p></details>
-      <details><summary>Do you provide maintenance?</summary><p>Yes. We offer ongoing updates, monitoring, and growth improvements.</p></details>
-      <details><summary>Can you publish to TestFlight/Play testing?</summary><p>Yes. We set up beta testing and release workflows.</p></details>
+      <details><summary data-en="How long does it take?" data-es="¿Cuánto tarda?">How long does it take?</summary><p data-en="Most MVPs ship in 4–10 weeks depending on scope and integrations." data-es="La mayoría de los MVPs salen en 4–10 semanas según alcance e integraciones.">Most MVPs ship in 4–10 weeks depending on scope and integrations.</p></details>
+      <details><summary data-en="Do you provide maintenance?" data-es="¿Dan mantenimiento?">Do you provide maintenance?</summary><p data-en="Yes. We offer ongoing updates, monitoring, and growth improvements." data-es="Sí. Ofrecemos updates, monitoreo y mejoras de crecimiento continuas.">Yes. We offer ongoing updates, monitoring, and growth improvements.</p></details>
+      <details><summary data-en="TestFlight/Play testing?" data-es="¿TestFlight/Play testing?">TestFlight/Play testing?</summary><p data-en="Yes. We set up beta testing and release workflows." data-es="Sí. Configuramos beta testing y flujos de release.">Yes. We set up beta testing and release workflows.</p></details>
     </section>
 
     <section class="clients">
       <div class="section-header">
-        <h2>Clients</h2>
-        <p>Apps we’ve helped bring to market.</p>
+        <h2 data-en="Clients" data-es="Clientes">Clients</h2>
+        <p data-en="Apps we’ve helped bring to market." data-es="Apps que hemos ayudado a lanzar al mercado.">Apps we’ve helped bring to market.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item" aria-label="Client 1"><img src="../images/clients/client-1.svg" alt="Client 1 logo" loading="lazy" /></div>
@@ -174,51 +141,43 @@
     </section>
     <section class="testimonials">
       <div class="section-header">
-        <h2>Testimonials</h2>
-        <p>Mobile app results for Miami/Hialeah.</p>
+        <h2 data-en="Testimonials" data-es="Testimonios">Testimonials</h2>
+        <p data-en="Mobile app results for Miami/Hialeah." data-es="Resultados de aplicaciones móviles para Miami/Hialeah.">Mobile app results for Miami/Hialeah.</p>
       </div>
       <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-star"></i></div>
-          <h3>“ASO y lanzamiento”</h3>
-          <p>“Nos guiaron con capturas, metadata y el envío. La app quedó estable y rápida.” — <strong>Sofía H.</strong></p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon"><i class="fas fa-star"></i></div>
-          <h3>“Integraciones clave”</h3>
-          <p>“Pagos, auth y analytics listos. Comunicación fluida todo el sprint.” — <strong>Jason F.</strong></p>
-        </div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-star"></i></div><h3>“ASO y lanzamiento”</h3><p>“Nos guiaron con capturas, metadata y el envío. La app quedó estable y rápida.” — <strong>Sofía H.</strong></p></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-star"></i></div><h3>“Integraciones clave”</h3><p>“Pagos, auth y analytics listos. Comunicación fluida todo el sprint.” — <strong>Jason F.</strong></p></div>
       </div>
     </section>
 
     <section class="services" id="related-services">
       <div class="section-header">
-        <h2>Related services</h2>
-        <p>Services that pair well with mobile development.</p>
+        <h2 data-en="Related services" data-es="Servicios relacionados">Related services</h2>
+        <p data-en="Services that pair well with mobile development." data-es="Servicios que combinan bien con el desarrollo móvil.">Services that pair well with mobile development.</p>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-image"><i class="fas fa-palette"></i></div>
           <div class="service-content">
-            <h3>UX/UI Design</h3>
-            <p>Research and design systems to craft intuitive mobile experiences.</p>
-            <a class="service-btn" href="ux-ui-design-miami.html">Learn More</a>
+            <h3 data-en="UX/UI Design" data-es="Diseño UX/UI">UX/UI Design</h3>
+            <p data-en="Research and design systems to craft intuitive mobile experiences." data-es="Investigación y sistemas de diseño para crear experiencias móviles intuitivas.">Research and design systems to craft intuitive mobile experiences.</p>
+            <a class="service-btn" href="ux-ui-design-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-code"></i></div>
           <div class="service-content">
-            <h3>Web Design Miami</h3>
-            <p>Landing pages and web portals that integrate seamlessly with your app.</p>
-            <a class="service-btn" href="web-design-miami.html">Learn More</a>
+            <h3 data-en="Web Design Miami" data-es="Diseño Web Miami">Web Design Miami</h3>
+            <p data-en="Landing pages and web portals that integrate seamlessly with your app." data-es="Páginas de destino y portales web que se integran perfectamente con tu app.">Landing pages and web portals that integrate seamlessly with your app.</p>
+            <a class="service-btn" href="web-design-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-search"></i></div>
           <div class="service-content">
-            <h3>SEO Miami</h3>
-            <p>Organic visibility for your app’s site and content hubs.</p>
-            <a class="service-btn" href="seo-miami.html">Learn More</a>
+            <h3 data-en="SEO Miami" data-es="SEO Miami">SEO Miami</h3>
+            <p data-en="Organic visibility for your app’s site and content hubs." data-es="Visibilidad orgánica para el sitio de tu app y centros de contenido.">Organic visibility for your app’s site and content hubs.</p>
+            <a class="service-btn" href="seo-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
       </div>
@@ -226,11 +185,11 @@
 
     <section class="contact">
       <div class="section-header">
-        <h2>Ready to build?</h2>
-        <p>Let’s launch your app with confidence.</p>
+        <h2 data-en="Ready to build?" data-es="¿Listo para construir?">Ready to build?</h2>
+        <p data-en="Let’s launch your app with confidence." data-es="Lanzamos tu app con confianza.">Let’s launch your app with confidence.</p>
       </div>
       <div class="whatsapp-cta">
-        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20mobile%20app%20in%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20mobile%20app%20in%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span></a>
       </div>
     </section>
   </main>

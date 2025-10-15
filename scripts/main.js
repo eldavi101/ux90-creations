@@ -228,8 +228,10 @@ const translations = {
     }
 };
 
-// Current language (default: English)
-let currentLanguage = 'en';
+// Current language (default: English) with persistence
+let currentLanguage = (typeof window !== 'undefined' && window.localStorage)
+    ? (localStorage.getItem('ux90_lang') || 'en')
+    : 'en';
 
 // DOM Elements
 const hamburger = document.getElementById('hamburger');
@@ -242,8 +244,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeApp() {
-    // Set default language
-    switchLanguage('en');
+    // Set initial language (persisted or default)
+    switchLanguage(currentLanguage);
     
     // Initialize navigation
     initializeNavigation();
@@ -265,6 +267,11 @@ function initializeApp() {
 function switchLanguage(lang) {
     currentLanguage = lang;
     document.body.setAttribute('data-lang', lang);
+    // Update <html lang="..."> for SEO/a11y and persist preference
+    try {
+        document.documentElement.setAttribute('lang', lang);
+        if (window?.localStorage) localStorage.setItem('ux90_lang', lang);
+    } catch {}
     
     // Update language buttons
     const langButtons = document.querySelectorAll('.lang-btn');

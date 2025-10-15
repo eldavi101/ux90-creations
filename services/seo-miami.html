@@ -114,11 +114,15 @@
           <span class="brand-tagline">Digital Agency</span>
         </div>
       </div>
+      <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+      </div>
       <div class="nav-menu">
-        <a class="nav-link" href="../#services">Services</a>
-        <a class="nav-link" href="../#about">About</a>
-        <a class="nav-link" href="../#contact">Contact</a>
-        <a class="cta-nav" href="../#whatsapp-btn">Get Quote</a>
+        <a class="nav-link" href="../#services" data-en="Services" data-es="Servicios">Services</a>
+        <a class="nav-link" href="../#about" data-en="About" data-es="Nosotros">About</a>
+        <a class="nav-link" href="../#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        <a class="cta-nav" href="../#whatsapp-btn" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
       </div>
     </div>
   </nav>
@@ -126,24 +130,24 @@
   <main class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-top:96px;">
       <ol>
-        <li><a href="../">Home</a></li>
-        <li><a href="../#services">Services</a></li>
-        <li aria-current="page">SEO Miami</li>
+        <li><a href="../" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="../#services" data-en="Services" data-es="Servicios">Services</a></li>
+        <li aria-current="page" data-en="SEO Miami" data-es="SEO Miami">SEO Miami</li>
       </ol>
     </nav>
     <section class="hero" style="padding-top: 96px;">
-      <h1>SEO Miami</h1>
-      <p>Local SEO strategies to rank in Google Maps and organic results. Built for Miami and Hialeah businesses.</p>
+      <h1 data-en="SEO Miami" data-es="SEO Miami">SEO Miami</h1>
+      <p data-en="Local SEO strategies to rank in Google Maps and organic results. Built for Miami and Hialeah businesses." data-es="Estrategias de SEO local para posicionar en Google Maps y resultados orgánicos. Enfocado en negocios de Miami y Hialeah.">Local SEO strategies to rank in Google Maps and organic results. Built for Miami and Hialeah businesses.</p>
       <div class="hero-cta">
-        <a href="https://wa.me/17869926153?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20SEO%20en%20Miami" class="btn-primary" target="_blank">Chat on WhatsApp</a>
-        <a href="../#contact" class="btn-secondary">Request a Quote</a>
+        <a href="https://wa.me/17869926153?text=Hola%20quiero%20información%20sobre%20SEO%20en%20Miami" class="btn-primary" target="_blank" data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</a>
+        <a href="../#contact" class="btn-secondary" data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</a>
       </div>
     </section>
 
     <section class="services" id="packages">
       <div class="section-header">
-        <h2>What’s included</h2>
-        <p>Everything needed to improve rankings and leads.</p>
+        <h2 data-en="What’s included" data-es="Qué incluye">What’s included</h2>
+        <p data-en="Everything needed to improve rankings and leads." data-es="Todo lo necesario para mejorar posiciones y leads.">Everything needed to improve rankings and leads.</p>
       </div>
       <div class="services-grid">
         <div class="service-card"><div class="service-image"><i class="fas fa-screwdriver-wrench"></i></div><div class="service-content"><h3>Technical SEO</h3><p>Page speed, crawlability, structured data, and indexation.</p></div></div>
@@ -154,18 +158,18 @@
 
     <section class="about-section" id="faq">
       <div class="section-header">
-        <h2>FAQ</h2>
-        <p>Answers for common SEO questions.</p>
+        <h2 data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</h2>
+        <p data-en="Answers for common SEO questions." data-es="Respuestas a preguntas comunes sobre SEO.">Answers for common SEO questions.</p>
       </div>
-      <details><summary>How do you measure results?</summary><p>We track leads, calls, rankings, and GA4 conversions with monthly reports.</p></details>
-      <details><summary>Do you create content?</summary><p>Yes. We plan bilingual content and optimize for E‑E‑A‑T and local intent.</p></details>
-      <details><summary>Contracts?</summary><p>Flexible month‑to‑month after an initial 2‑month setup period.</p></details>
+      <details><summary data-en="How do you measure results?" data-es="¿Cómo miden resultados?">How do you measure results?</summary><p data-en="We track leads, calls, rankings, and GA4 conversions with monthly reports." data-es="Medimos leads, llamadas, posiciones y conversiones GA4 con reportes mensuales.">We track leads, calls, rankings, and GA4 conversions with monthly reports.</p></details>
+      <details><summary data-en="Do you create content?" data-es="¿Crean contenido?">Do you create content?</summary><p data-en="Yes. We plan bilingual content and optimize for E‑E‑A‑T and local intent." data-es="Sí. Planificamos contenido bilingüe y optimizamos para E‑E‑A‑T e intención local.">Yes. We plan bilingual content and optimize for E‑E‑A‑T and local intent.</p></details>
+      <details><summary data-en="Contracts?" data-es="¿Contratos?">Contracts?</summary><p data-en="Flexible month‑to‑month after an initial 2‑month setup period." data-es="Mes a mes flexible tras un inicio de 2 meses de puesta a punto.">Flexible month‑to‑month after an initial 2‑month setup period.</p></details>
     </section>
 
     <section class="clients">
       <div class="section-header">
-        <h2>Clients</h2>
-        <p>Brands we’ve helped grow with SEO.</p>
+        <h2 data-en="Clients" data-es="Clientes">Clients</h2>
+        <p data-en="Brands we’ve helped grow with SEO." data-es="Marcas a las que hemos ayudado a crecer con SEO.">Brands we’ve helped grow with SEO.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item" aria-label="Client 1"><img src="../images/clients/client-1.svg" alt="Client 1 logo" loading="lazy" /></div>
@@ -178,8 +182,8 @@
     </section>
     <section class="testimonials">
       <div class="section-header">
-        <h2>Testimonials</h2>
-        <p>SEO feedback from Miami/Hialeah clients.</p>
+        <h2 data-en="Testimonials" data-es="Testimonios">Testimonials</h2>
+        <p data-en="SEO feedback from Miami/Hialeah clients." data-es="Opiniones sobre SEO de clientes en Miami/Hialeah.">SEO feedback from Miami/Hialeah clients.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item">
@@ -197,32 +201,32 @@
 
     <section class="services" id="related-services">
       <div class="section-header">
-        <h2>Related services</h2>
-        <p>Complement SEO with these services for better results.</p>
+        <h2 data-en="Related services" data-es="Servicios relacionados">Related services</h2>
+        <p data-en="Complement SEO with these services for better results." data-es="Complementa SEO con estos servicios para mejores resultados.">Complement SEO with these services for better results.</p>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-image"><i class="fas fa-code"></i></div>
           <div class="service-content">
-            <h3>Web Design Miami</h3>
-            <p>Fast, responsive websites built SEO‑first to convert visitors into leads.</p>
-            <a class="service-btn" href="web-design-miami.html">Learn More</a>
+            <h3 data-en="Web Design Miami" data-es="Diseño Web Miami">Web Design Miami</h3>
+            <p data-en="Fast, responsive websites built SEO‑first to convert visitors into leads." data-es="Sitios rápidos y responsivos, construidos SEO‑first para convertir visitas en leads.">Fast, responsive websites built SEO‑first to convert visitors into leads.</p>
+            <a class="service-btn" href="web-design-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-palette"></i></div>
           <div class="service-content">
-            <h3>UX/UI Design</h3>
-            <p>Improve UX and conversion rates with research‑backed design and testing.</p>
-            <a class="service-btn" href="ux-ui-design-miami.html">Learn More</a>
+            <h3 data-en="UX/UI Design" data-es="Diseño UX/UI">UX/UI Design</h3>
+            <p data-en="Improve UX and conversion rates with research‑backed design and testing." data-es="Mejora UX y conversiones con diseño y pruebas basadas en investigación.">Improve UX and conversion rates with research‑backed design and testing.</p>
+            <a class="service-btn" href="ux-ui-design-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-shopping-cart"></i></div>
           <div class="service-content">
-            <h3>E‑commerce Miami</h3>
-            <p>Shopify & WooCommerce storefronts ready for SEO and analytics.</p>
-            <a class="service-btn" href="ecommerce-miami.html">Learn More</a>
+            <h3 data-en="E‑commerce Miami" data-es="E‑commerce Miami">E‑commerce Miami</h3>
+            <p data-en="Shopify & WooCommerce storefronts ready for SEO and analytics." data-es="Tiendas Shopify & WooCommerce listas para SEO y analítica.">Shopify & WooCommerce storefronts ready for SEO and analytics.</p>
+            <a class="service-btn" href="ecommerce-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
       </div>
@@ -230,11 +234,11 @@
 
     <section class="contact">
       <div class="section-header">
-        <h2>Ready to grow?</h2>
-        <p>Let’s improve your rankings and inbound leads.</p>
+        <h2 data-en="Ready to grow?" data-es="¿Listo para crecer?">Ready to grow?</h2>
+        <p data-en="Let’s improve your rankings and inbound leads." data-es="Mejoremos tus posiciones y los leads entrantes.">Let’s improve your rankings and inbound leads.</p>
       </div>
       <div class="whatsapp-cta">
-        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20SEO%20services%20in%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20SEO%20services%20in%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span></a>
       </div>
     </section>
   </main>

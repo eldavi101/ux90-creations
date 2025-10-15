@@ -74,11 +74,15 @@
           <span class="brand-tagline">Digital Agency</span>
         </div>
       </div>
+      <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+      </div>
       <div class="nav-menu">
-        <a class="nav-link" href="../#services">Services</a>
-        <a class="nav-link" href="../#about">About</a>
-        <a class="nav-link" href="../#contact">Contact</a>
-        <a class="cta-nav" href="../#whatsapp-btn">Get Quote</a>
+        <a class="nav-link" href="../#services" data-en="Services" data-es="Servicios">Services</a>
+        <a class="nav-link" href="../#about" data-en="About" data-es="Nosotros">About</a>
+        <a class="nav-link" href="../#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        <a class="cta-nav" href="../#whatsapp-btn" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
       </div>
     </div>
   </nav>
@@ -86,24 +90,24 @@
   <main class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-top:96px;">
       <ol>
-        <li><a href="../">Home</a></li>
-        <li><a href="../#services">Services</a></li>
-        <li aria-current="page">UX/UI Design Miami</li>
+        <li><a href="../" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="../#services" data-en="Services" data-es="Servicios">Services</a></li>
+        <li aria-current="page" data-en="UX/UI Design Miami" data-es="Diseño UX/UI Miami">UX/UI Design Miami</li>
       </ol>
     </nav>
     <section class="hero" style="padding-top: 96px;">
-      <h1>UX/UI Design Miami</h1>
-      <p>Investigación, prototipos y sistemas de diseño. Interfaces accesibles y enfocadas en conversión para web y apps.</p>
+      <h1 data-en="UX/UI Design Miami" data-es="Diseño UX/UI Miami">UX/UI Design Miami</h1>
+      <p data-en="Research, prototyping and design systems. Accessible, conversion‑focused interfaces for web and apps." data-es="Investigación, prototipos y sistemas de diseño. Interfaces accesibles y enfocadas en conversión para web y apps.">Investigación, prototipos y sistemas de diseño. Interfaces accesibles y enfocadas en conversión para web y apps.</p>
       <div class="hero-cta">
-        <a href="https://wa.me/17869926153?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20UX%2FUI%20Design" class="btn-primary" target="_blank">Chat on WhatsApp</a>
-        <a href="../#contact" class="btn-secondary">Request a Quote</a>
+        <a href="https://wa.me/17869926153?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20UX%2FUI%20Design" class="btn-primary" target="_blank" data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</a>
+        <a href="../#contact" class="btn-secondary" data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</a>
       </div>
     </section>
 
     <section class="services" id="overview">
       <div class="section-header">
-        <h2>What you get</h2>
-        <p>Diseño centrado en el usuario que impulsa resultados.</p>
+        <h2 data-en="What you get" data-es="Qué obtienes">What you get</h2>
+        <p data-en="User‑centered design that drives results." data-es="Diseño centrado en el usuario que impulsa resultados.">Diseño centrado en el usuario que impulsa resultados.</p>
       </div>
       <div class="services-grid">
         <div class="service-card"><div class="service-image"><i class="fas fa-vial"></i></div><div class="service-content"><h3>Research & Testing</h3><p>Entrevistas, tests de usabilidad y mapas de experiencia para validar decisiones.</p></div></div>
@@ -114,8 +118,8 @@
 
     <section class="about-section" id="process">
       <div class="section-header">
-        <h2>Our process</h2>
-        <p>Entregables claros en cada etapa.</p>
+        <h2 data-en="Our process" data-es="Nuestro proceso">Our process</h2>
+        <p data-en="Clear deliverables at each stage." data-es="Entregables claros en cada etapa.">Entregables claros en cada etapa.</p>
       </div>
       <ol class="about-features">
         <li>Descubrimiento & investigación</li>
@@ -128,18 +132,18 @@
 
     <section class="contact" id="faq">
       <div class="section-header">
-        <h2>FAQ</h2>
-        <p>Lo más consultado por equipos en Miami/Hialeah.</p>
+        <h2 data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</h2>
+        <p data-en="Most asked by teams in Miami/Hialeah." data-es="Lo más consultado por equipos en Miami/Hialeah.">Lo más consultado por equipos en Miami/Hialeah.</p>
       </div>
-      <details><summary>¿Trabajan con nuestra marca actual?</summary><p>Sí, respetamos tu identidad y proponemos mejoras evolutivas.</p></details>
-      <details><summary>¿Pueden mejorar conversiones?</summary><p>Iteramos con hipótesis y tests A/B cuando aplica, priorizando métricas clave.</p></details>
-      <details><summary>¿Se integran con nuestro equipo?</summary><p>Trabajamos colaborativamente con stakeholders y desarrollo.</p></details>
+      <details><summary data-en="Do you work with our existing brand?" data-es="¿Trabajan con nuestra marca actual?">¿Trabajan con nuestra marca actual?</summary><p data-en="Yes, we keep your identity and propose evolutionary improvements." data-es="Sí, respetamos tu identidad y proponemos mejoras evolutivas.">Sí, respetamos tu identidad y proponemos mejoras evolutivas.</p></details>
+      <details><summary data-en="Can you improve conversions?" data-es="¿Pueden mejorar conversiones?">¿Pueden mejorar conversiones?</summary><p data-en="We iterate with hypotheses and A/B tests when applicable, prioritizing key metrics." data-es="Iteramos con hipótesis y tests A/B cuando aplica, priorizando métricas clave.">Iteramos con hipótesis y tests A/B cuando aplica, priorizando métricas clave.</p></details>
+      <details><summary data-en="Do you integrate with our team?" data-es="¿Se integran con nuestro equipo?">¿Se integran con nuestro equipo?</summary><p data-en="We work collaboratively with stakeholders and engineering." data-es="Trabajamos colaborativamente con stakeholders y desarrollo.">Trabajamos colaborativamente con stakeholders y desarrollo.</p></details>
     </section>
 
     <section class="clients">
       <div class="section-header">
-        <h2>Clients</h2>
-        <p>Selected brands we’ve supported.</p>
+        <h2 data-en="Clients" data-es="Clientes">Clients</h2>
+        <p data-en="Selected brands we’ve supported." data-es="Marcas seleccionadas que hemos apoyado.">Selected brands we’ve supported.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item" aria-label="Client 1"><img src="../images/clients/client-1.svg" alt="Client 1 logo" loading="lazy" /></div>
@@ -153,8 +157,8 @@
 
     <section class="testimonials">
       <div class="section-header">
-        <h2>Testimonials</h2>
-        <p>UX/UI feedback from Miami/Hialeah clients.</p>
+        <h2 data-en="Testimonials" data-es="Testimonios">Testimonials</h2>
+        <p data-en="UX/UI feedback from Miami/Hialeah clients." data-es="Opiniones de clientes de Miami/Hialeah sobre UX/UI.">UX/UI feedback from Miami/Hialeah clients.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item"><div class="feature-icon"><i class="fas fa-star"></i></div><h3>“Onboarding más claro”</h3><p>“Simplificaron pasos y mejoró el completion rate. Proceso muy ordenado.” — <strong>Andrea V.</strong></p></div>
@@ -165,32 +169,32 @@
 
     <section class="services" id="related-services">
       <div class="section-header">
-        <h2>Related services</h2>
-        <p>Design pairs best with these services.</p>
+        <h2 data-en="Related services" data-es="Servicios relacionados">Related services</h2>
+        <p data-en="Design pairs best with these services." data-es="El diseño se potencia con estos servicios.">Design pairs best with these services.</p>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-image"><i class="fas fa-code"></i></div>
           <div class="service-content">
-            <h3>Web Design Miami</h3>
-            <p>From prototypes to high‑performing websites built to convert.</p>
-            <a class="service-btn" href="web-design-miami.html">Learn More</a>
+            <h3 data-en="Web Design Miami" data-es="Diseño Web Miami">Web Design Miami</h3>
+            <p data-en="From prototypes to high‑performing websites built to convert." data-es="De prototipos a sitios de alto rendimiento enfocados en convertir.">From prototypes to high‑performing websites built to convert.</p>
+            <a class="service-btn" href="web-design-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-mobile-alt"></i></div>
           <div class="service-content">
-            <h3>Mobile Apps Miami</h3>
-            <p>Bring your UX to life on iOS and Android with native or cross‑platform apps.</p>
-            <a class="service-btn" href="mobile-apps-miami.html">Learn More</a>
+            <h3 data-en="Mobile Apps Miami" data-es="Apps Móviles Miami">Mobile Apps Miami</h3>
+            <p data-en="Bring your UX to life on iOS and Android with native or cross‑platform apps." data-es="Lleva tu UX a iOS y Android con apps nativas o multiplataforma.">Bring your UX to life on iOS and Android with native or cross‑platform apps.</p>
+            <a class="service-btn" href="mobile-apps-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
         <div class="service-card">
           <div class="service-image"><i class="fas fa-search"></i></div>
           <div class="service-content">
-            <h3>SEO Miami</h3>
-            <p>Scale traffic and conversions with a solid on‑page and technical SEO foundation.</p>
-            <a class="service-btn" href="seo-miami.html">Learn More</a>
+            <h3 data-en="SEO Miami" data-es="SEO Miami">SEO Miami</h3>
+            <p data-en="Scale traffic and conversions with a solid on‑page and technical SEO foundation." data-es="Escala tráfico y conversiones con una base sólida de SEO on‑page y técnico.">Scale traffic and conversions with a solid on‑page and technical SEO foundation.</p>
+            <a class="service-btn" href="seo-miami.html" data-en="Learn More" data-es="Saber Más">Learn More</a>
           </div>
         </div>
       </div>
@@ -198,11 +202,11 @@
 
     <section class="contact">
       <div class="section-header">
-        <h2>Ready to start?</h2>
-        <p>Get a tailored proposal in 24–48 hours.</p>
+        <h2 data-en="Ready to start?" data-es="¿Listo para empezar?">Ready to start?</h2>
+        <p data-en="Get a tailored proposal in 24–48 hours." data-es="Recibe una propuesta a medida en 24–48 horas.">Get a tailored proposal in 24–48 hours.</p>
       </div>
       <div class="whatsapp-cta">
-        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20quote%20for%20UX%2FUI%20Design%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20quote%20for%20UX%2FUI%20Design%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span></a>
       </div>
     </section>
   </main>
@@ -219,4 +223,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
   <script src="../scripts/main.js" defer></script>
 </body>
-<\/html>
+</html>
