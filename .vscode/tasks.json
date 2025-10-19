@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "git-commit-ui-pass-3",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"-A",
+				";",
+				"git",
+				"commit",
+				"-m",
+				"UI pass 3: normalize client logo grid visuals; add consistent mobile nav IDs/hamburger across service pages",
+				";",
+				"git",
+				"push"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
