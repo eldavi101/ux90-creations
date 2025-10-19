@@ -305,6 +305,11 @@ a {
     overflow: hidden;
 }
 
+/* Service page hero (inside main container) can be shorter */
+main .hero {
+    min-height: 60vh;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -312,10 +317,10 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-        rgba(99, 102, 241, 0.9) 0%, 
-        rgba(139, 92, 246, 0.8) 50%,
-        rgba(6, 182, 212, 0.7) 100%);
+    background: linear-gradient(135deg,
+        rgba(99, 102, 241, 0.6) 0%,
+        rgba(139, 92, 246, 0.45) 50%,
+        rgba(6, 182, 212, 0.35) 100%);
     z-index: 1;
 }
 
@@ -341,6 +346,13 @@ a {
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Ensure hero headings are bright on gradient */
+.hero h1,
+.hero .hero-title,
+.hero .hero-subtitle {
+    color: rgba(255, 255, 255, 0.98);
+}
+
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
@@ -355,21 +367,53 @@ a {
     flex-wrap: wrap;
 }
 
+/* Stronger, more legible CTAs on hero */
 .hero-cta .btn-primary {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-white);
+    border: none;
 }
 
 .hero-cta .btn-secondary {
     background: transparent;
     color: var(--text-white);
-    border-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.95);
 }
 
 .hero-cta .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
     color: var(--text-white);
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb li {
+    color: var(--text-secondary);
+}
+
+.breadcrumb li + li::before {
+    content: '›';
+    color: var(--text-light);
+    margin: 0 0.5rem;
+}
+
+/* Breadcrumbs when placed over hero */
+.hero .breadcrumb li,
+.hero .breadcrumb li + li::before {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 /* Guarantees */
@@ -902,7 +946,7 @@ a {
 }
 
 .footer-section ul li a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.85);
     transition: var(--transition-fast);
 }
 
@@ -1224,11 +1268,4 @@ a {
     }
 }
 
-/* Language-specific styles */
-[data-lang="es"] {
-    /* Spanish-specific typography adjustments if needed */
-}
-
-[data-lang="en"] {
-    /* English-specific typography adjustments if needed */
-}
+/* Language-specific styles placeholder removed to avoid empty rulesets */
