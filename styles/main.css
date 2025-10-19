@@ -1259,8 +1259,36 @@ main .hero {
     }
 
     .navbar {
-        background: rgba(31, 41, 55, 0.95);
-    }
+/* Language-specific styles */
+/* Placeholder removed earlier to avoid empty rulesets */
+
+/* ===================== */
+/* Pass 2: UI refinements */
+/* ===================== */
+
+/* Accessible focus styles */
+:where(a, button, .btn-primary, .btn-secondary, .service-btn, .cta-nav, .nav-link, .whatsapp-btn):focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.25);
+}
+
+/* Limit hero text width for readability */
+.hero-content { 
+    max-width: 680px;
+}
+
+/* Footer list spacing for readability */
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Slightly tighter section spacing for rhythm */
+.section-header { margin-bottom: 3.5rem; }
+.services { padding: 5.5rem 0; }
+.why-choose-us { padding: 5.5rem 0; }
+.contact { padding: 5.5rem 0; }
 
     .service-card {
         background: var(--bg-primary);
