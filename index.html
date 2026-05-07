@@ -52,19 +52,40 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["ProfessionalService", "LocalBusiness"],
         "name": "UX90 Creations",
-        "description": "Professional websites Hialeah, SEO services, application development, and design solutions for Miami businesses. Expert posicionamiento de Google and digital marketing.",
-        "url": "https://ux90.dev",
+        "alternateName": "UX90",
+        "description": "Professional web design, SEO, mobile app development, desktop software, and UX/UI services for businesses in Hialeah, Miami, and Miami-Dade.",
+        "url": "https://ux90.dev/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ux90.dev/images/logo.png",
+            "width": 200,
+            "height": 200
+        },
         "telephone": "+1-786-992-6153",
-        "email": "machindavid2@gmail.com",
+        "email": "hello@ux90.dev",
+        "foundingDate": "2020",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Hialeah",
             "addressRegion": "FL",
-            "addressCountry": "US",
-            "areaServed": ["Hialeah", "Miami", "Miami-Dade"]
+            "addressCountry": "US"
         },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Hialeah"
+            },
+            {
+                "@type": "City",
+                "name": "Miami"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Miami-Dade County"
+            }
+        ],
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": "25.8576",
@@ -72,14 +93,59 @@
         },
         "openingHours": "Mo-Fr 09:00-18:00",
         "priceRange": "$$",
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "25.8576",
-                "longitude": "-80.2781"
-            },
-            "geoRadius": "50000"
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Web Design Miami",
+                        "url": "https://ux90.dev/services/web-design-miami.html"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "SEO Miami",
+                        "url": "https://ux90.dev/services/seo-miami.html"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mobile App Development Miami",
+                        "url": "https://ux90.dev/services/mobile-apps-miami.html"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce Miami",
+                        "url": "https://ux90.dev/services/ecommerce-miami.html"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desktop Apps Miami",
+                        "url": "https://ux90.dev/services/desktop-apps-miami.html"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "UX/UI Design Miami",
+                        "url": "https://ux90.dev/services/ux-ui-design-miami.html"
+                    }
+                }
+            ]
         },
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -112,33 +178,29 @@
                 "name": "Equipo confiable y metódico"
             }
         ],
-        "services": [
-            {
-                "@type": "Service",
-                "name": "Websites Hialeah Development",
-                "description": "Professional websites development for Hialeah businesses with SEO optimization"
-            },
-            {
-                "@type": "Service", 
-                "name": "SEO Hialeah Services",
-                "description": "Expert SEO and posicionamiento de Google for Miami businesses"
-            },
-            {
-                "@type": "Service",
-                "name": "Application Development Miami",
-                "description": "Professional application development and design for Miami businesses"
-            },
-            {
-                "@type": "Service",
-                "name": "Professional Design Services",
-                "description": "Expert design solutions for websites and aplicaciones in Hialeah"
-            }
-        ],
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero-title", ".hero-subtitle", ".section-title", ".faq-question"]
+        },
         "sameAs": [
             "https://www.instagram.com/ux90creations?igsh=eHJ0bmJnOHozdHJ3"
         ]
     }
     </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "UX90 Creations",
+            "url": "https://ux90.dev/",
+            "inLanguage": ["en-US", "es"],
+            "publisher": {
+                "@type": "Organization",
+                "name": "UX90 Creations",
+                "url": "https://ux90.dev/"
+            }
+        }
+        </script>
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -167,21 +229,6 @@
             ]
         }
         </script>
-            <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "HowTo",
-                "name": "How to request a quote from UX90 Creations",
-                "description": "Simple steps to contact us via WhatsApp or the contact form and receive a proposal.",
-                "supply": ["Project idea", "Contact details"],
-                "tool": ["WhatsApp", "Contact form"],
-                "step": [
-                    {"@type": "HowToStep", "name": "Open WhatsApp", "text": "Click the WhatsApp button to start a chat with our team.", "url": "https://ux90.dev/#whatsapp-btn"},
-                    {"@type": "HowToStep", "name": "Share project details", "text": "Tell us about your business, goals, and timeline (EN/ES)."},
-                    {"@type": "HowToStep", "name": "Get a proposal", "text": "We send a tailored proposal within 24–48 hours."}
-                ]
-            }
-            </script>
                 <script type="application/ld+json">
                 {
                     "@context": "https://schema.org",
@@ -198,7 +245,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="images/logo.png" alt="UX90 Creations Logo" class="brand-logo">
+                <img src="images/logo.png" alt="UX90 Creations Logo" class="brand-logo" width="60" height="60">
                 <div class="brand-text">
                     <h2 class="brand-name" data-en="UX90 Creations" data-es="UX90 Creaciones">UX90 Creations</h2>
                     <span class="brand-tagline" data-en="Digital Agency" data-es="Agencia Digital">Digital Agency</span>
@@ -339,22 +386,22 @@
             </div>
             <div class="features-grid">
                 <div class="feature-item" aria-label="Client 1">
-                    <img src="images/clients/client-1.svg" alt="Client 1 logo" loading="lazy" />
+                    <img src="images/clients/client-1.svg" alt="Client 1 logo" class="client-logo" loading="lazy" width="160" height="60" />
                 </div>
                 <div class="feature-item" aria-label="Client 2">
-                    <img src="images/clients/client-2.svg" alt="Client 2 logo" loading="lazy" />
+                    <img src="images/clients/client-2.svg" alt="Client 2 logo" class="client-logo" loading="lazy" width="160" height="60" />
                 </div>
                 <div class="feature-item" aria-label="Client 3">
-                    <img src="images/clients/client-3.svg" alt="Client 3 logo" loading="lazy" />
+                    <img src="images/clients/client-3.svg" alt="Client 3 logo" class="client-logo" loading="lazy" width="160" height="60" />
                 </div>
                 <div class="feature-item" aria-label="Client 4">
-                    <img src="images/clients/client-4.svg" alt="Client 4 logo" loading="lazy" />
+                    <img src="images/clients/client-4.svg" alt="Client 4 logo" class="client-logo" loading="lazy" width="160" height="60" />
                 </div>
                 <div class="feature-item" aria-label="Client 5">
-                    <img src="images/clients/client-5.svg" alt="Client 5 logo" loading="lazy" />
+                    <img src="images/clients/client-5.svg" alt="Client 5 logo" class="client-logo" loading="lazy" width="160" height="60" />
                 </div>
                 <div class="feature-item" aria-label="Client 6">
-                    <img src="images/clients/client-6.svg" alt="Client 6 logo" loading="lazy" />
+                    <img src="images/clients/client-6.svg" alt="Client 6 logo" class="client-logo" loading="lazy" width="160" height="60" />
                 </div>
             </div>
         </div>
@@ -520,7 +567,7 @@
             </div>
             
             <!-- Related Services on Home -->
-            <div class="section-header" style="margin-top: 2rem;">
+            <div class="section-header related-services-header">
                 <h2 data-en="Related services" data-es="Servicios relacionados">Related services</h2>
                 <p data-en="Quick links to our most requested services" data-es="Accesos rápidos a nuestros servicios más solicitados">Quick links to our most requested services</p>
             </div>
@@ -699,7 +746,7 @@
                         <div>
                             <h3 data-en="Email" data-es="Correo">Email</h3>
                             <p>
-                                <a href="mailto:machindavid2@gmail.com">machindavid2@gmail.com</a>
+                                <a href="mailto:hello@ux90.dev">hello@ux90.dev</a>
                             </p>
                         </div>
                     </div>
@@ -747,7 +794,7 @@
                 <div class="whatsapp-cta">
                     <h3 data-en="Ready to start your project?" data-es="¿Listo para iniciar tu proyecto?">Ready to start your project?</h3>
                     <p data-en="Chat with us on WhatsApp for immediate assistance" data-es="Chatea con nosotros en WhatsApp para asistencia inmediata">Chat with us on WhatsApp for immediate assistance</p>
-                    <a href="https://wa.me/17869926153?text=Hello%20I%20want%20info%20about%20UX90%20Creations%20services" class="whatsapp-btn" target="_blank">
+                    <a href="https://wa.me/17869926153?text=Hello%20I%20want%20info%20about%20UX90%20Creations%20services" class="whatsapp-btn" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i>
                         <span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span>
                     </a>
@@ -762,7 +809,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <img src="images/logo.png" alt="UX90 Creations Logo" class="footer-logo">
+                        <img src="images/logo.png" alt="UX90 Creations Logo" class="footer-logo" width="72" height="72">
                         <h3>UX90 Creations</h3>
                     </div>
                     <p data-en="We are a team of web designers committed to our clients. UX90 Creations is the leading customer service agency since 2020. We create beautiful and functional websites, landing pages, marketplaces and custom solutions for our users." data-es="Somos un equipo de diseñadores web comprometidos con nuestros clientes. UX90 Creations es la agencia líder en servicio al cliente desde 2020. Creamos bellos y funcionales sitios web, landing pages, marketplaces y soluciones a la medida de nuestros usuarios.">
@@ -786,7 +833,7 @@
                     <h4 data-en="Contact" data-es="Contacto">Contact</h4>
                     <ul class="contact-details">
                         <li><i class="fas fa-phone"></i> <a href="tel:+17869926153">+1 (786) 992-6153</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:machindavid2@gmail.com">machindavid2@gmail.com</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:hello@ux90.dev">hello@ux90.dev</a></li>
                         <li><i class="fas fa-map-marker-alt"></i> <span data-en="Miami, FL, United States" data-es="Miami, FL, Estados Unidos">Miami, FL, United States</span></li>
                     </ul>
                 </div>
@@ -795,7 +842,7 @@
                     <h4 data-en="Follow Us" data-es="Síguenos">Follow Us</h4>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/ux90creations?igsh=eHJ0bmJnOHozdHJ3" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/ux90creations?igsh=eHJ0bmJnOHozdHJ3" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="https://wa.me/17869926153" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -821,6 +868,9 @@
                         <li><a href="services/seo-miami.html">SEO Miami</a></li>
                         <li><a href="services/mobile-apps-miami.html">Mobile App Development Miami</a></li>
                         <li><a href="services/ecommerce-miami.html">E‑commerce Miami</a></li>
+                        <li><a href="about.html">About UX90 Creations</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -828,7 +878,7 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/17869926153?text=Hello%20I%20want%20info%20about%20UX90%20Creations%20services" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/17869926153?text=Hello%20I%20want%20info%20about%20UX90%20Creations%20services" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 

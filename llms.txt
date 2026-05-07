@@ -1,0 +1,26 @@
+# UX90 Creations
+
+> Miami and Hialeah web design, SEO, and mobile app development agency.
+> Founded 2020. 50+ projects completed. Bilingual service in English and Spanish.
+
+## Services
+
+- [Web Design Miami](https://ux90.dev/services/web-design-miami.html): Custom responsive websites for local businesses. Typical projects range from $1,500 to $6,000 and include SEO setup, performance optimization, and analytics.
+- [SEO Miami](https://ux90.dev/services/seo-miami.html): Local SEO, Google Business Profile optimization, technical SEO, on-page improvements, and bilingual content strategy for Miami-Dade companies.
+- [Mobile Apps Miami](https://ux90.dev/services/mobile-apps-miami.html): iOS and Android app development with React Native, Flutter, and native workflows. MVPs commonly launch in 4 to 10 weeks.
+- [E-commerce Miami](https://ux90.dev/services/ecommerce-miami.html): Shopify and WooCommerce stores with payments, shipping, inventory, analytics, and conversion optimization.
+- [Desktop Apps Miami](https://ux90.dev/services/desktop-apps-miami.html): Cross-platform desktop software with Electron, .NET, Java, installers, auto-updates, and business system integrations.
+- [UX/UI Design Miami](https://ux90.dev/services/ux-ui-design-miami.html): User research, wireframes, testing, accessible interface design, and scalable design systems.
+
+## Trust Pages
+
+- [About UX90 Creations](https://ux90.dev/about.html): Agency story, process, operating principles, and service approach.
+- [Case Studies](https://ux90.dev/case-studies.html): Selected engagements with measurable outcomes across web, SEO, e-commerce, and product design.
+- [Privacy Policy](https://ux90.dev/privacy-policy.html): How contact submissions and client communications are handled.
+
+## Contact
+
+- Email: hello@ux90.dev
+- Phone: +1 (786) 992-6153
+- Location: Hialeah, Miami-Dade, Florida, United States
+- Languages: English, Spanish

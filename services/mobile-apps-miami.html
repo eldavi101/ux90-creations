@@ -31,10 +31,22 @@
     "@type": "Service",
     "name": "Mobile App Development Miami",
     "areaServed": ["Miami", "Hialeah", "Miami-Dade"],
-    "provider": {"@type": "Organization", "name": "UX90 Creations", "url": "https://ux90.dev"},
+    "provider": {
+      "@type": "Organization",
+      "name": "UX90 Creations",
+      "url": "https://ux90.dev",
+      "sameAs": ["https://www.instagram.com/ux90creations?igsh=eHJ0bmJnOHozdHJ3"]
+    },
     "serviceType": "Mobile Application Development",
     "description": "Native iOS/Android and cross‑platform apps with design and integrations for Miami businesses.",
     "url": "https://ux90.dev/services/mobile-apps-miami.html",
+    "image": "https://ux90.dev/images/logo.png",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://ux90.dev/services/mobile-apps-miami.html",
+      "availability": "https://schema.org/InStock",
+      "itemOffered": {"@type": "Service", "name": "Mobile App Development Miami"}
+    },
     "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "2"},
     "review": [
       {"@type": "Review", "author": {"@type": "Person", "name": "Sofía H."}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "Publicamos en App Store y Play sin contratiempos. Buen diseño y push notifications funcionando.", "name": "Lanzamiento sin contratiempos"},
@@ -69,7 +81,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-brand">
-        <a href="../"><img src="../images/logo.png" alt="UX90 Creations Logo" class="brand-logo"></a>
+        <a href="../"><img src="../images/logo.png" alt="UX90 Creations Logo" class="brand-logo" width="60" height="60"></a>
         <div class="brand-text">
           <h2 class="brand-name">UX90 Creations</h2>
           <span class="brand-tagline">Digital Agency</span>
@@ -79,29 +91,39 @@
         <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
         <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
       </div>
-      <div class="nav-menu">
+      <div class="nav-menu" id="navMenu">
         <a class="nav-link" href="../#services" data-en="Services" data-es="Servicios">Services</a>
-        <a class="nav-link" href="../#about" data-en="About" data-es="Nosotros">About</a>
+        <a class="nav-link" href="../about.html" data-en="About" data-es="Nosotros">About</a>
         <a class="nav-link" href="../#contact" data-en="Contact" data-es="Contacto">Contact</a>
         <a class="cta-nav" href="../#whatsapp-btn" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-top:96px;">
+    <nav class="breadcrumb page-breadcrumb" aria-label="Breadcrumb">
       <ol>
         <li><a href="../" data-en="Home" data-es="Inicio">Home</a></li>
         <li><a href="../#services" data-en="Services" data-es="Servicios">Services</a></li>
         <li aria-current="page" data-en="Mobile Apps Miami" data-es="Apps Móviles Miami">Mobile Apps Miami</li>
       </ol>
     </nav>
-    <section class="hero" style="padding-top: 96px;">
+    <section class="hero page-hero">
       <h1 data-en="Mobile Apps Miami" data-es="Apps Móviles Miami">Mobile Apps Miami</h1>
       <p data-en="iOS/Android apps with great UX, integrations, and analytics for Miami and Hialeah businesses." data-es="Apps iOS/Android con gran UX, integraciones y analíticas para negocios de Miami y Hialeah.">iOS/Android apps with great UX, integrations, and analytics for Miami and Hialeah businesses.</p>
       <div class="hero-cta">
-        <a href="https://wa.me/17869926153?text=Hola%20quiero%20información%20sobre%20desarrollo%20de%20apps%20móviles" class="btn-primary" target="_blank" data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</a>
+        <a href="https://wa.me/17869926153?text=Hola%20quiero%20información%20sobre%20desarrollo%20de%20apps%20móviles" class="btn-primary" target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</a>
         <a href="../#contact" class="btn-secondary" data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</a>
+      </div>
+      <div class="page-meta">
+        <div class="page-meta-item"><i class="fas fa-user-pen"></i><span><strong>Author:</strong> UX90 Creations Editorial Team</span></div>
+        <div class="page-meta-item"><i class="fas fa-calendar"></i><span><strong>Updated:</strong> May 7, 2026</span></div>
+        <div class="page-meta-item"><i class="fas fa-file-lines"></i><span><strong>Proof:</strong> <a href="../case-studies.html">Case studies</a></span></div>
       </div>
     </section>
 
@@ -133,12 +155,12 @@
         <p data-en="Apps we’ve helped bring to market." data-es="Apps que hemos ayudado a lanzar al mercado.">Apps we’ve helped bring to market.</p>
       </div>
       <div class="features-grid">
-        <div class="feature-item" aria-label="Client 1"><img src="../images/clients/client-1.svg" alt="Client 1 logo" loading="lazy" /></div>
-        <div class="feature-item" aria-label="Client 2"><img src="../images/clients/client-2.svg" alt="Client 2 logo" loading="lazy" /></div>
-        <div class="feature-item" aria-label="Client 3"><img src="../images/clients/client-3.svg" alt="Client 3 logo" loading="lazy" /></div>
-        <div class="feature-item" aria-label="Client 4"><img src="../images/clients/client-4.svg" alt="Client 4 logo" loading="lazy" /></div>
-        <div class="feature-item" aria-label="Client 5"><img src="../images/clients/client-5.svg" alt="Client 5 logo" loading="lazy" /></div>
-        <div class="feature-item" aria-label="Client 6"><img src="../images/clients/client-6.svg" alt="Client 6 logo" loading="lazy" /></div>
+        <div class="feature-item" aria-label="Client 1"><img src="../images/clients/client-1.svg" alt="Client 1 logo" class="client-logo" loading="lazy" width="160" height="60" /></div>
+        <div class="feature-item" aria-label="Client 2"><img src="../images/clients/client-2.svg" alt="Client 2 logo" class="client-logo" loading="lazy" width="160" height="60" /></div>
+        <div class="feature-item" aria-label="Client 3"><img src="../images/clients/client-3.svg" alt="Client 3 logo" class="client-logo" loading="lazy" width="160" height="60" /></div>
+        <div class="feature-item" aria-label="Client 4"><img src="../images/clients/client-4.svg" alt="Client 4 logo" class="client-logo" loading="lazy" width="160" height="60" /></div>
+        <div class="feature-item" aria-label="Client 5"><img src="../images/clients/client-5.svg" alt="Client 5 logo" class="client-logo" loading="lazy" width="160" height="60" /></div>
+        <div class="feature-item" aria-label="Client 6"><img src="../images/clients/client-6.svg" alt="Client 6 logo" class="client-logo" loading="lazy" width="160" height="60" /></div>
       </div>
     </section>
     <section class="testimonials">
@@ -191,7 +213,7 @@
         <p data-en="Let’s launch your app with confidence." data-es="Lanzamos tu app con confianza.">Let’s launch your app with confidence.</p>
       </div>
       <div class="whatsapp-cta">
-        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20mobile%20app%20in%20Miami" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i><span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span></a>
+        <a href="https://wa.me/17869926153?text=Hello%20I%20want%20a%20mobile%20app%20in%20Miami" class="whatsapp-btn" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span data-en="Chat on WhatsApp" data-es="Chatear en WhatsApp">Chat on WhatsApp</span></a>
       </div>
     </section>
   </main>

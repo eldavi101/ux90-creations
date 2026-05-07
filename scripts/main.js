@@ -467,7 +467,7 @@ ${data.message}
 ---
 Enviado desde: ${window.location.href}
 `);
-    const mailtoLink = `mailto:machindavid2@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:hello@ux90.dev?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
 }
 
